@@ -1,102 +1,38 @@
-🥔 Potato
-A serious JavaScript & TypeScript playground with an unserious name
+# sv
 
-Potato is an online JavaScript & TypeScript playground built for people who just want to run code instantly without installing half the internet.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-Why the name Potato?
-Because it started small, simple… and then accidentally became feature-rich 🥔✨
+## Creating a project
 
-🚀 What is Potato?
+If you're seeing this, you've probably already done this step. Congrats!
 
-Potato lets you write, run, and share JavaScript / TypeScript code directly in your browser.
+```sh
+# create a new project in the current directory
+npx sv create
 
-No setup.
-No config files.
-No “why is Node yelling at me?” moments.
+# create a new project in my-app
+npx sv create my-app
+```
 
-Just code → run → done.
+## Developing
 
-🧠 Features (aka why this potato is cracked)
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-⚡ Instant JS & TS execution
+```sh
+npm run dev
 
-🔁 Switch between JavaScript & TypeScript anytime
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-🎨 Change editor fonts & themes (because vibes matter)
+## Building
 
-▶️ Auto-run toggle (write → see magic happen)
+To create a production version of your app:
 
-🔗 Share runnable code with a link
+```sh
+npm run build
+```
 
-🧩 Add your own snippets
+You can preview the production build with `npm run preview`.
 
-🧼 Minimal, distraction-free UI
-
-All inside a single-page playground that refuses to overcomplicate things.
-
-🤔 Why Potato exists
-
-Most online compilers try to be:
-
-an IDE
-
-a tutorial
-
-a cloud platform
-
-a startup pitch
-
-Potato just wants to help you think in code.
-
-It’s for:
-
-testing snippets
-
-learning JS / TS
-
-debugging logic
-
-sharing quick examples
-
-proving a point in an argument 😄
-
-🥔 Philosophy
-
-Less setup.
-More thinking.
-Zero nonsense.
-
-Potato won’t ask for your email.
-Potato won’t track your soul.
-Potato won’t tell you to “upgrade to Pro”.
-
-Potato just runs your code.
-
-🛠 Tech (for curious humans)
-
-JavaScript / TypeScript
-
-In-browser code execution
-
-Monaco-based editor
-
-Built with performance and simplicity in mind
-
-(Yes, it’s fast. Yes, that was intentional.)
-
-🌱 Status
-
-Potato is actively evolving.
-New features appear when motivation + curiosity collide.
-
-If something feels missing, it probably means:
-
-“oh that would be cool” hasn’t happened yet.
-
-❤️ Final note
-
-Potato may sound silly,
-but it was built with serious care, curiosity, and love for developers.
-
-If it helps you write better code —
-mission accomplished 🥔✨
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

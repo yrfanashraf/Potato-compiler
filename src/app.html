@@ -15,7 +15,16 @@
 			content="javascript compiler, typescript compiler, online js compiler, online ts compiler, run js code, ts code editor,js Playground,ts playground,online code runner"
 		/>
 		%sveltekit.head%
+		<!-- Google tag (gtag.js) -->
 	</head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6M50V9FW0"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-M6M50V9FW0');
+	</script>
 	<body data-sveltekit-preload-data="hover" style="margin: 0;font-family: cursive;">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
